@@ -1,6 +1,4 @@
 [
-  {"caption":"Image1"},
-  {"caption":"Image2"},
-  {"caption":"Image3"},
-  {"caption":"Image4"}
+  {"caption1":"Image1", "caption2":"Image1", "caption3":"Image1"},
+  {"caption1":"Image1", "caption2":"Image1", "caption3":"Image1"}
 ]
