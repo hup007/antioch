@@ -291,7 +291,7 @@ body {
     position: fixed;
     top: 25rem;
     right: 0.5rem;
-    z-index: 500;
+    z-index: 200;
     background-color: black;
     color: white;
     font-size: 1rem;
