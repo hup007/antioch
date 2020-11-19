@@ -1,275 +1,430 @@
-Update/*******Main Page*********/
+/*Vars*/
+:root {
+    --navBgColor: rgba(0, 219, 219,1);
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+/*Body*/
 body {
-  font-size: 20px;
-  overflow-x: hidden;
-  font-weight: bolder;
-  color: #000000;
-  background-color: white;
-  /*font-family: 'Oxygen', sans-serif;*/
-  font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    overflow-x: hidden;
+    font-weight: bolder;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
 }
 
-/******Top Bar******/
-.topbar {
-  background: #7aaec4;
-  height: 3rem;
-  padding: .5rem;
+/************** Navi Bar********************/
+.navbar-container {
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+    z-index: 100;
+    position: fixed;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    width: 100%;
+
 }
 
-.topbar a {
-  text-decoration: none;
-  font-size: 1.1rem;
+.nav-bar {
+    position: relative;
+    background-color: var(--navBgColor);
+    display: grid;
+    grid-template-columns: 0.5fr 9.5fr;
+    margin: 0 0 0 0;
 }
 
-/********Navigation Bar*******/
-.my_navbar {
-  /*background-color: #ffffff;*/
-  letter-spacing: .1rem;
-  font-weight: 600;
-  font-size: 1.15rem;
-  height: 6rem;
-  box-shadow: 0 0.5rem 0.5rem rgba(0,0,0,0.3); /*hor,vert,blurr radius, color*/
-  z-index: 1; /*to overlap to next item below*/
+.nav-bar div .logo {
+    border-radius: 1rem ;
+    box-shadow: 0rem 0.5rem 1rem rgba(0,0,0,1);
+    width: 4rem;
 }
 
-.nav-logo img {
-  height: 80px;
+#logo-div {
+    margin: 0.3rem 0 0 1rem;
 }
 
-.nav-item {
-  padding: 0.5rem;
-  /*font-weight: bolder;*/
+#nav-links2 {
+    border: 3px solid black;
+}
+/************Breadcrumb*********************/
+.breadc {
+    background-color: rgba(0,0,0,0.7);
+    height: 2rem;
+    border: 0px solid rgba(0,0,0,0.7);
+    margin: 0 0 0 0;
+    width: 100%;
+    font-size: 0.6rem;
+    position: fixed;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+    z-index: 100;
+}
+.breadcrumb {
+    list-style: none;
+}
+.breadcrumb li {
+    display: inline;
 }
 
-.nav-link {
-  color: #5b5555!important;
+.breadcrumb li:before {
+    content: "/\00a0";
+    font-weight: normal;
+    color: white;
+    /*order: 2px solid black;*/
+}
+.breadcrumb a{
+    font-weight: normal;
+    text-decoration: none;
+    color: white;
+    /*border: 2px solid black;*/
+}
+.breadcrumb a:hover {
+    text-decoration: underline;
+    color: red;
+    font-weight: normal;
 }
 
-.nav-link.active,
-.nav-link:hover {
-  color: #4981b3!important;
+/***********Image Slider*****************/
+.slider-container {
+    position: relative;
+    margin: 0 0 0 0;
+    background-color: black;
+    box-shadow: 0rem 0.5rem 3rem rgba(0,0,0,0.4);
+    z-index: 90;
 }
 
-.navbar span {
-  font-size: 20px;
-  color: green;
-  text-shadow: 1px 1px 1px #222;
+.slides img {
+    max-height: 500px;
+    width: 100%; 
+    object-fit:cover;
 }
 
-/*--- Image Slider --*/
-
-.carousel-item {
-  background-color: gray;
-  height: 70vh;
-};
-
-#carousel {
-  box-shadow: 0 1rem 1rem rgba(0,0,0,0.3);
-  z-index: 1; /*not working*/
-}
-
-.carousel-inner {
-  max-height: 38rem!important;
-}
-
-.carousel-item-prev,
-.carousel-item-next,
-.carousel-item.active {
-  transition: transform 1.2s ease;
-}
-
-.carousel-caption {
-  position: absolute;
-  top: 54%;
-  transform: translateY(-50%);
-  text-transform: uppercase;
-  color: white;
+/* Hide the images by default */
+.slides {
+    display: none;
 }
 
 .bg-cust {
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 1.5rem;
+    /*background-color: rgba(0, 0, 0, 0.4);*/
+    bottom: 0;
+    left: 2%;
+    width: 40%;
+    border-radius: 1.5rem 1.5rem 0 0 ;
 }
 
-.carousel-caption h1 {
-  font-size: 3rem;
-  text-shadow:0.1rem 0.1rem 0.3rem rgba(0,0,0,1);
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
 }
 
-.border-primary {
-  border-top: 0.3rem solid #4981b3!important;
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.2rem;
+    text-shadow: 0.2rem 0.2rem 0.1rem rgba(0, 0, 0,0.5);
 }
 
-.carousel-caption h3 {
-  font-size: 2.2rem;
-  text-shadow:0.1rem 0.1rem 0.2rem rgba(0,0,0,1);
-}
-
-.btn-lg {
-  border-radius: 0;
-  text-transform: uppercase;
-  font-size: 1rem;
-  border-width: medium;
-}
-
-.btn-primary {
-  background-color: #4981b3;
-  border: .1rem solid #4981b3;
-}
-
-.btn-primary:hover,
-.btn-primary:focus  {
-  background-color: #68a0d2!important;
-  border: .1rem solid #68a0d2!important;
-}
-
-/***********Selection**********/
-.myrow1_home div {
-  text-align: center;
-  /*border-radius: 0.3rem;*/
-  /*background-color: #7aaec4;*/
-  border: 1px solid #000000;
-  height: 50px;
-  padding: 10px;
-}
-
-.sel1 {
-  background-color: #951c49;
-}
-
-.sel1:hover, .sel2:hover, .sel3:hover, .sel4:hover,.sel5:hover,.sel6:hover {
-  box-shadow: 0px 10px 5px #cccccc;
-}
-
-.sel2 {
-  background-color: #f6b319;
-}
-
-.sel3 {
-  background-color: #557c3e;
-}
-
-.sel4 {
-  background-color: #195ff6;
-}
-
-.sel5 {
-  background-color: #c00c99;
-}
-
-.sel6 {
-  background-color: #928f88;
-}
-
-/******Main Page********/
-.my_row1 img{
-  box-shadow: 0 0.5rem 0.5rem rgba(0,0,0,0.1);
-}
-
-
-
-/********Fixed Bacground Image**********/
-.fixed {
-  background-image: url('../images/vang.jpg');
-  position: fixed;
-}
-
-.fixed-background{
-  padding: 10rem 0;
-}
-
-.fixed-background {
-  position: relative;
-  width: 100%;
-  z-index: 1000!important;
-}
-.fixed-wrap {
-  clip: rect(0, auto, auto, 0);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -999 !important;
-}
-.fixed {
-  z-index: -999!important;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  will-change: transform;
-}
-
-/********Footer*********/
-.my_footer {
-  color: white;
-  margin-top: 30px;
-  padding-top: 35px;
-  padding-bottom: 30px;
-  background-color: #222;
-  border-top: 0;
-}
-
-.my_hours > span, .my_addr > span, .my_testimonies > span {
-  font-size: 1.3em;
-}
-
-.my_addr p {
-  color: #557c3e;
-  font-size: .8em;
-  line-height: 1.8;
-}
-
-.my_testimonies > p {
-  font-style: italic;
+.text {
+    font-size: 3.5rem;
+    color: red;
+    font-weight: bolder;
+    text-align: center;
+    padding: 8px 12px;
+    position: absolute;
+    text-shadow: 10px 10px 10px rgba(0,0,0,1);
 
 }
 
-#sm .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
-
-
-
-/********** Large devices only **********/
-@media (min-width: 1200px) {
-
+/*Fixed Background Image*/
+.fixed-bg {
+    background-image: url("../images/themepark.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
 }
 
-/********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
+/*******Main Page********/
+.main-title {
+    text-align: center;
+    font-size: 1.2rem;
+    text-shadow: 0.2rem 0.2rem 0.1rem rgba(105, 99, 99,0.5);
+    height: 5.3rem;
 }
 
-/********** Small devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
+.main-title div {
+    border-bottom: 12px solid red; 
+    height: 0.5rem; 
 }
 
-/********** Extra small devices only **********/
-@media (max-width: 767px) {
-
+#mp-h1 {
+    background-color: white;
+    border-radius: 1rem 1rem 0 0;
 }
 
-@media (max-width: 575px) {
-  .my_row2 > section {
-    height: 200px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-top: 5px solid #61122f;
+/*********Selectiors************************/
+.sel-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr 3fr;
+    height: 1.5rem;
+    z-index: 100;
+}
+
+.sel-container div {
+    padding: 0rem 0rem 0rem 0rem;
+    border: 1px solid rgb(100, 12, 12);
+    background-color: red;
+    border-radius: 0px 0px 15px 15px;
+    height: 2.5rem;
+    width: 12rem;
+    text-align: center;
+}
+
+.sel-container a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    text-shadow: 0.2rem 0.2rem 0.1rem rgba(0, 0, 0,0.5);
+}
+
+.sticky {
+    position: sticky;
+    top: 7.2rem;
+    width: 100%;
   }
+  
+.sticky + .content {
+    padding-top: 60px;
+  }
+/*******Joining stubs***************/
+#dock2 {
+    position: relative;
+    height: 7.5rem;
+}
+
+/**********3-Column Section ATTRACTIONS*********/
+#att-sec h1{
+    text-shadow: 0.2rem 0.2rem 0.1rem rgba(105, 99, 99,0.5);
+    margin: 1rem 50% 0 1rem;
+    border-bottom: 10px solid red; 
+    padding: 1rem 0 0 1rem;
+}
+#att-sec {
+    position: relative;
+    margin: 0rem 1rem 0rem 1rem;
+    border-radius: 1rem 1rem 0rem 0rem;
+    z-index: 1;
+
+}
+.attractions-container {
+    position: relative;
+    margin: 0 0 0 0;
+    padding: 0 1rem 0 1rem;
+    background-color: white;
+    border-radius: 0rem 0rem 1rem 1rem;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+}
+.attractions-container img{
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+    border-radius: 0.5em;
+    width: 100%;
+    object-fit: contain;
+}
+.attractions-container h3 {
+    text-shadow: 0.2rem 0.2rem 0.1rem rgba(105, 99, 99,0.5);
+}
+
+/**********Things to Do*************/
+#ttd-sec {
+    border-radius: 1rem 1rem 1rem 1rem;
+    position: relative;
+    margin: 0 0 0 0;
+    padding: 0 1rem 0 1rem;
+    background-color: white;
+    border-radius: 0rem 0rem 1rem 1rem;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+}
+
+
+/***********Return Top***************/
+.rt {
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    position: fixed;
+    top: 25rem;
+    right: 0.5rem;
+    z-index: 100;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+    
+}
+.rt:hover {
+    background-color: var(--navBgColor);
+}
+
+/**********Media Queries***************/
+/********Mobile Screen**********/
+@media (max-width: 768px) {
+    #nav-links {
+        display: none!important;
+    }
+    #nav-links2 {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        background: black;
+        display: block;
+        right: 3rem;
+        top: 1.5rem;
+        width: 2.5rem;
+        height: 2rem;
+        border-radius: 0.5rem;
+        position: absolute;
+        box-shadow: 0rem 0.30rem 0.5rem rgba(0,0,0,1);
+      }   
+    .nav-bar>div>a.icon>i {
+        color: white;
+        margin: 0.4rem 0rem 0rem 0.7rem;
+    }
+    .hamburger:hover {
+        /*box-shadow: 0.1rem 0.5rem 1rem rgba(255,0,0,1);*/
+        background-color: rgba(114, 106, 106, 1);
+    }
+    #nav-links2 div{
+        position: relative;
+        width: 100%;
+        background-color: var(--navBgColor);
+        height: 5rem;
+    }
+    #nav-links2 a {
+        text-decoration: none;
+        text-transform: uppercase;
+        margin: 0rem 0 0rem 1rem;
+        text-shadow: 10px 10px 10px rgba(0,0,0,1);
+        position: relative;
+    }
+    
+    #nav-links2 i {
+        margin: 2.5rem 0 2rem 0;
+        color: white;
+        font-size: 0.9rem;
+    }
+    
+    #nav-links2 span {
+        margin: 0 0 0 0.5rem;
+        color: white;
+        text-decoration: none;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        text-shadow:0.1rem 0.1rem 0.3rem rgba(0,0,0,1);
+    }
+    #nav-links2 div:hover {
+        background-color: rgba(114, 106, 106, 1);
+    }
+    #im {
+        height: 7.5rem;
+    }
+}
+
+/*********Large Screen*************/
+@media (min-width: 769px) {
+    .hamburger {
+        display: none!important;
+    }
+    #nav-links {
+        display: grid;
+        grid-template-columns: 2fr 2.8fr 2fr 3fr 0.2fr;
+        position: relative;
+    }
+    #nav-links2 {
+        display: none!important;
+    }
+
+    #nav-links div {
+        text-align: left;
+    }
+
+    #nav-links a {
+        text-decoration: none;
+        text-transform: uppercase;
+        margin: 0rem 0 0rem 1rem;
+        text-shadow: 10px 10px 10px rgba(0,0,0,1);
+        position: relative;
+    }
+    
+    #nav-links i {
+        margin: 2.5rem 0 2rem 0;
+        color: white;
+        font-size: 0.9rem;
+    }
+    
+    #nav-links span {
+        margin: 0 0 0 0.5rem;
+        color: white;
+        text-decoration: none;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        text-shadow:0.1rem 0.1rem 0.3rem rgba(0,0,0,1);
+    }
+
+    #nav-links a:hover {
+        background-color: red;
+        box-shadow: 1rem 1rem 3rem rgba(0,0,0,1);
+    }
+    
+    .attractions-container {
+        display: grid;
+        grid-template-columns: 3.3fr 3.3fr 3.3fr;
+        margin: 0 0 0 0;
+        padding: 2em 2em 2em 2em;
+        grid-gap: 2rem;
+        grid-auto-rows: minmax(100px,auto);
+    }
+    #im {
+        height: 7.3rem;
+    }
 
 }
 
-/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
-@media (max-width: 479px) {
-
-}
