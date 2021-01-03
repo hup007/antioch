@@ -592,7 +592,7 @@ body {
     background-image: url("../images/themepark.jpg");
     background-attachment: fixed;
     background-position: center;
-    background-repeat: repeat;
+    /* background-repeat: repeat; */
 
 }
 
