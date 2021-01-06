@@ -6,7 +6,6 @@ body {
     height: 100%;
     font-size: 20px;
     overflow-x: hidden;
-    font-weight: bolder;
     color: black;
     font-family: 'Montserrat', sans-serif;
     background-color: white;
@@ -14,6 +13,7 @@ body {
 /*******navbar1*********/
 .navbar1 {
     height:2rem;
+    font-weight: bolder;
     text-align: center; 
     position: fixed; 
     z-index: 300;
@@ -90,7 +90,7 @@ body {
 #navbar2 {
     text-align: center;
     position: relative;
-    top: 10.1rem; /*10.4rem*/
+    top: 10.1rem;
     z-index: 300;
 }
 
@@ -134,7 +134,7 @@ body {
 
 #navbar2.sticky {
     position: fixed;
-    top: 7rem; 
+    top: 7rem;
     width: 100%;
   }
 
@@ -196,7 +196,10 @@ body {
     border-radius: 2rem 2rem 2rem 2rem;
     border: 4px solid black;
 }
-
+#ricon {
+    position: relative;
+    top: 0.4rem;
+}
 #souvenir {
     position: relative;
     top: 2.6rem;
@@ -507,12 +510,14 @@ body {
 }
 .HotelRoomInfo {
     padding: 2rem 15rem 2rem 15rem;
+    line-height: 1.6;
 }
 .HotelRoomImage {
     text-align: center;
+    padding-top: 1rem;
 }
 .HotelRoomImage img{
-    width: 80%;
+    width: 55%;
     background: white;
     border-radius: 1.5rem;
     box-shadow: -0.5px 5px 20px rgba(0,0,0,0.6);
@@ -520,6 +525,11 @@ body {
 }
 .HotelRoomFeatures {
     padding: 0rem 15rem 2rem 15rem;
+    border-bottom: 1rem solid gray;
+    line-height: 1.6;
+}
+#nborder {
+    border: none;
 }
 
 /**********Footer*************/
@@ -559,20 +569,22 @@ body {
     font-size: 1rem;
     font-style: italic;
     padding-bottom: 5rem;
+    text-align: center;
 }
 
 .opening{
     box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .opening th {
-    text-align: left;
+    text-align: center;
     background-color: coral;
     padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 .opening tr:nth-last-child(1) td {
-    /* background-color: papayawhip; */
     font-weight: bold;
     color: red;
     background-color: white;
@@ -595,8 +607,6 @@ body {
     width: 100%;
     height: 100%;
     background-size: cover;
-    /* background-repeat: repeat; */
-
 }
 
 /* Animation */
@@ -668,9 +678,3 @@ body {
         border-bottom: 20px solid red;
     }
   }
-
-#demo {
-    bottom: 0rem;
-    left: 30rem;
-    position: absolute;
-}
