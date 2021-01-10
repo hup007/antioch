@@ -523,29 +523,17 @@ body {
 /**********Footer*************/
 .footer {
     position: relative;
-    top: 50rem; /*30rem*/
-    display: grid;
-    grid-template-columns: 33fr 34fr 33fr;
-    color: white;
-    font-weight: normal;
+    top: 50rem; 
 }
-.footer  div{
-    background-color:#222;
-    padding: 0rem 1rem 0rem 1rem;
-}
-
 .copyr {
     position: relative;
-    /* border: 2px solid black; */
-    top: 50rem; /*30rem*/
+    top: 50rem;
     padding: 1rem 0 1rem 0;
     font-weight: normal;
-
 }
 .discm {
     position: relative;
-    /* border: 2px solid black; */
-    top: 50rem; /*30rem*/
+    top: 50rem;
     padding: 1rem 1rem 1rem 1rem;
     font-weight: normal;
 }

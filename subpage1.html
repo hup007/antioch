@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tickets and attractions</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Book tickets and explore attractions here!">
+    <meta name="viewport" content="width=device-width" , initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui>
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Atma">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .attraction-image-header {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/attractions_and_rides.jpg");
+      height: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <!--navbar1-->
+    <nav class="navbar1">
+      <div id='logo-div'>
+        <a href="index.html">
+        <img src="images/logo.jpg" alt="logo" title='logo.jpg' class="logo">
+        </a>
+      </div>
+      <div class='nav-bar'>
+        <div id='nav-links'>
+          <a class='nb1' style='width: 10rem;' href="page2.html#hotel"> 
+          <i class="fas fa-hotel"></i><span>Hotels</span>
+          </a> 
+          <a class='nb1' style='width: 10rem' href="page2.html#shopndine">
+          <i class="fas fa-utensils"></i><span>Shop/Dine</span>
+          </a> 
+          <a class='nb1' style='width: 12rem' href="#Attractions_link">
+          <i class="fas fa-gift"></i><span>Attractions</span>
+          </a>
+          <a id='book' href="#Tickets_link" class='active'>
+          <span style="color: rgb(12, 0, 66)">Book Now</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!--Start of Navbar2-->
+    <nav id="navbar2">
+      <div class="sel-container">
+        <div class='bookend'></div>
+        <div class='nvb2' onclick="location.href='index.html#news-update'">
+          <span>News Update</span>
+        </div>
+        <div class='nvb2' onclick="location.href='index.html#events'">
+          <span>Events</span>
+        </div>
+        <div class='nvb2' onclick="location.href='index.html#short-break'">
+          <span>Short-Breaks</span>
+        </div>
+        <div class='nvb2' onclick="location.href='index.html#promotions'">
+          <span>Promotions</span>
+        </div>
+        <div class='bookend'></div>
+      </div>
+    </nav>
+    <div class="priceImage">
+      <img src="images/prices_and_rates.jpg" alt="priceImage" title="https://unsplash.com/photos/j_od0HNbHUY" style="width:100%;">
+      <div class="priceTitle">Online Tickets</div>
+      <div class="priceHeading">Book tickets today from SGD43 onwards for a magical festive adventure!</div>
+    </div>
+    <!--price list-->
+    <a class="anchor" id="Tickets_link"></a>
+    <div class="Tickets">
+      <h1>Get your tickets now!</h1>
+      <div class="TicketPricing">
+        <table>
+          <tr>
+            <th></th>
+            <th>Standard pass</th>
+            <th>Express pass</th>
+            <th>Premium pass</th>
+            <th>Annual pass</th>
+          </tr>
+          <tr>
+            <th>Parking</th>
+            <th></th>
+            <th>Free</th>
+            <th>Free</th>
+            <th>Free, priority</th>
+          </tr>
+          <tr>
+            <th>Express pass</th>
+            <th></th>
+            <th>Single use,<br> all attractions</th>
+            <th>Unlimited</th>
+            <th>Single use,<br> all attractions<br> per visit</th>
+          </tr>
+          <tr>
+            <th>Discount (ShopnDine)</th>
+            <th></th>
+            <th>10%</th>
+            <th>15%</th>
+            <th>15%</th>
+          </tr>
+          <tr>
+            <th>Adult Price</th>
+            <th>SGD67</th>
+            <th>SGD76</th>
+            <th>SGD99</th>
+            <th>SGD159</th>
+          </tr>
+          <tr>
+            <th>Child Price</th>
+            <th>SGD51</th>
+            <th>SGD60</th>
+            <th>SGD85</th>
+            <th>SGD143</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!--booking system-->
+    <div class="Booking" id="tickets_link">
+      <h1>Book Now!</h1>
+      <div class="TicketBooking">
+        <div class="form">
+          <form action="/action_page.php">
+            <div class="row">
+              <div class="col-25">
+                <label for="date">Date:</label>
+              </div>
+              <div class="col-75">
+                <input type="date" id="date" name="date">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">First Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="e.g. John">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="lname">Last Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="e.g. Doe">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="ticket">Ticket</label>
+              </div>
+              <div class="col-75">
+                <select id="ticket" name="ticket">
+                  <option value="#">- Select Pass Type -</option>
+                  <option value="standard pass">Standard Pass</option>
+                  <option value="Express Pass">Express Pass</option>
+                  <option value="Premium Pass">Premium Pass</option>
+                  <option value="Annual Pass">Annual Pass</option>
+                </select>
+              </div>
+              <div class="row">
+                <div class="col-25"><label for="pax">Adult Pax</label></div>
+                <div class="col-75">
+                  <select id="pax" name="pax">
+                    <option value="#">- Select Number of Pax -</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+                <div class="row">
+                  <div class="col-25"><label for="pax">Child Pax</label></div>
+                  <div class="col-75">
+                    <select id="pax" name="pax">
+                      <option value="#">- Select Number of Pax -</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </div>
+                  <div class="row">
+                    <div class="col-25"><label for="contact">Phone Number</label></div>
+                    <div class="col-75"><input type="text" id="contact" name="contact" placeholder="e.g. +65 9876 5432"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25"><label for="email">E-mail</label></div>
+                    <div class="col-75"><input type="text" id="email" name="email" placeholder="e.g. johndoe@gmail.com"></div>
+                  </div>
+                  <div class="row">
+                    <input type="submit" value="Checkout" style="border: 1px solid black; color: Black">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--attractions header-->
+    <a class="anchor" id="Attractions_link"></a>
+    <div class="attraction-image-header" title="https://unsplash.com/photos/bGGmaKnD8ws">
+      <div class="attractionHeadertext">
+        <p class="heading">Rides & Attractions</p>
+        <p style="font-size:20px" ;>There'll Be Something for Everybody.</p>
+      </div>
+    </div>
+    <!--attractions filter-->
+    <div class="filter">
+      <button class="button" style="vertical-align:middle; margin-left: 50px;"><a href="#the-rise-of-herobrine" class="link">Land Reserve & Rides</a>
+      </button>
+      <button class="button" style="vertical-align:middle"><a href="#a-ride-to-herobrine" class="link">Get Ready for Water</a>
+      </button>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Attractions in a Glimpse</button>
+      <div class="dropdown-content">
+        <a href="subpage1.html#the-rise-of-herobrine">The Rise of Herobrine</a>
+        <a href="subpage1.html#phasmophobia-the-awakening">Phasmophobia: The Awakening</a>
+        <a href="subpage1.html#plasmophobia-virtual-chamber">Plasmophobia Virtual Chamber</a>
+        <a href="subpage1.html#amongUs-silent-danger">Among Us: Silent Danger</a>
+        <a href="subpage1.html#a-walk-of-lights">A Walk Of Lights</a>
+        <a href="subpage1.html#a-ride-to-herobrine">A Ride to Herobrine</a>
+        <a href="subpage1.html#twesta-log-flume">Twesta Log Flume</a>
+        <a href="subpage1.html#splash-battle-imposters-reign">Splash Battle Imposters Reign</a>
+      </div>
+    </div>
+    <div class="Attractions">
+      <!--attractions and rides content-->
+      <div class="AttrDesc">
+        <div class="responsiveEvents" id="the-rise-of-herobrine">
+          <div class="gallery container">
+            <img src="images/herobrine_ride1.jpg" alt="herobrine ferris wheel" title="https://pixabay.com/images/id-540126/">
+            <h3 class="title">The Rise of Herobrine</h3>
+            <div class="icons">
+              <p><i class="fas fa-location-arrow"></i>Herobrine® Valley</p>
+            </div>
+            <div class="desc">
+              <p>Venture into the unknown side of Minecraft and discover the haunting story of its mythical antagonist, Herobrine.
+                Go on an ferris wheel adventure to explore the darkness in attempt to hunt down the mythical Herobrine, but be careful,
+                else the hunter becomes hunted...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="responsiveEvents" id="phasmophobia-the-awakening">
+          <div class="gallery container">
+            <img src="images/haunted_mansion.png" alt="Plasmophobia Haunted Mansion"
+            title="https://d302e0npexowb4.cloudfront.net/wp-content/uploads/2019/12/10130943/disneyland-haunted-mansion-e1575983428908.jpeg">
+            <h3 class="title">Phasmophobia®: The Awakening</h3>
+            <div class="icons">
+              <p><i class="fas fa-location-arrow"></i>Phasmophobia® Valley</p>
+              <p><i class="fas fa-user"></i>Ages 16 and up</p>
+            </div>
+            <div class="desc">
+              <p>From the creators of Phasmophobia, experience a specially made spinoff. Venture through an abandoned prison,
+                rumored to be haunted by the ghosts of yore... Equip yourself with an arsenal of ghost-busting tools,
+                and set out to collect as much information as possible about the prison's haunting inhabitants.
+                Tread carefully and think smart, for the outcome of the expedition depends on you.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="responsiveEvents" id="plasmophobia-virtual-chamber">
+          <div class="gallery container">
+            <img src="images/VR%20Simulator.jpg" alt="VR Simulator" title="https://robohub.org/wp-content/uploads/2016/04/cable-simulator3.jpg">
+            <h3 class="title">Phasmophobia® Virtual Chamber</h3>
+            <div class="icons">
+              <p><i class="fas fa-location-arrow"></i>Phasmophobia® Valley</p>
+              <p><i class="fas fa-user"></i>Ages 16 and up</p>
+            </div>
+            <div class="desc">
+              <p>Step into a virtual world unlike any you've seen before. Our cutting edge VR technology is not only capable of
+                complete 360° rotation both vertically and horizontally, but also comes equipped with a full 30m drop chute for the full heart-pounding experience!
+                Choose from our carefully curated selection of games, ranging from shooters to parkour,
+                and get ready for an unforgettable experience.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="responsiveEvents" id="amongUs-silent-danger">
+          <div class="gallery container">
+            <img src="images/amongus_bumper.jpg" alt="among us bumper cars" title="https://pixabay.com/images/id-4390958/">
+            <h3 class="title">Among Us: Silent Danger</h3>
+            <div class="icons">
+              <p><i class="fas fa-location-arrow"></i>Impostor Path</p>
+              <p><i class="fas fa-ruler"></i>1m min. height</p>
+            </div>
+            <div class="desc">
+              <p>Trapped on a spaceship with one goal— Return to earth. Grab all your friends and family for fantastic fun on our classic Among Us bumper car ride.
+                Prepare to outrun your favourite frenemy and take the chance on getting spun out.
+              </p>
+              <p style="font-size: 52px" ;> </p>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="responsiveEvents" id="a-walk-of-lights">
+          <div class="gallery container">
+            <img src="images/lightshow.jpg" alt="Twesta Lightshow" title="https://pixabay.com/images/id-540127/">
+            <h3 class="title">A Walk of Lights</h3>
+            <div class="icons">
+              <p><i class="fas fa-location-arrow"></i>Twesta Idea</p>
+            </div>
+            <div class="desc">
+              <p>Looking for quieter areas during peak periods?
+                Head over to Twesta Idea and check out our custom-made light show.
+                En-route to the spectacular 370m long walk, visitors can take 20 to 30mins to complete a walk around the lightshow.
+              </p>
+              <p style="font-size: 58px" ;> </p>
+            </div>
+          </div>
+        </div>
+        <div class="responsiveEvents" id="a-ride-to-herobrine">
+          <div class="gallery container">
+            <img src="images/herobrine_waterpark.jpg" alt="waterpark"
+            title="https://lh3.googleusercontent.com/YOpcwdKVo3NmhuAuKUbcE4VhOtsQi6WVX_XRn4gbTAJhxrUU9Ca6UzYjyWFAn3tRVys=h310">
+            <h3 class="title">A ride to Herobrine</h3>
+            <div class="icons">
+              <p><i class="fas fa-location-arrow"></i>Herobrine® Valley</p>
+              <p><i class="fas fa-tint"></i>You may get wet</p>
+            </div>
+            <div class="desc">
+              <p>Take high-speed water slides and uncover this secret waterpark of Herobrine! Standing nearly 60 feet tall and over 400 feet of slide,
+                the new mat racing water slide will feature 6 side-by-side racing lanes for you and your friends.
+                Be quick, or he'll sneak up on you before you know it!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="responsiveEvents" id="twesta-log-flume" title="https://www.prestonbarbieri.com/wp-content/uploads/2018/02/Movie-park-flume-ride.jpg">
+          <div class="gallery container">
+            <img src="images/log_flume_ride.jpg" alt="log flume ride">
+            <h3 class="title">Twesta Log Flume</h3>
+            <div class="icons">
+              <p><i class="fas fa-location-arrow"></i>Twesta Idea</p>
+              <p><i class="fas fa-ruler"></i>1m min. height</p>
+              <p><i class="fas fa-tint"></i>You may get wet</p>
+            </div>
+            <div class="desc">
+              <p>An industry classic, our ride offers a nice, relaxing, and dry ride... right up until that drop at the end that is.
+                As one of our original attractions, Twesta Log Flume ride has been a family favourite for years.
+                Not only is it a blast for the riders, it is also fun for the onlookers waiting to soak the incoming log with our hidden water cannons.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="responsiveEvents" id="splash-battle-imposters-reign">
+          <div class="gallery container">
+            <img src="images/splash_battle.jpg" alt="splash battle"
+            title="https://images.radio7.de/files/media/image/file/spritzpistole_cropped.jpg?rect=center%2Cmiddle%2C1333%2C750">
+            <h3 class="title">Splash Battle: Imposter's Reign</h3>
+            <div class="icons">
+              <p><i class="fas fa-location-arrow"></i>Impostor Path</p>
+              <p><i class="fas fa-tint"></i>You may get wet</p>
+            </div>
+            <div class="desc">
+              <p>Take a cruise on our 250ft. long waterway in a water spaceship splash-blast for the whole family. Explore our custom-made
+                spaceship and complete all water activities to win. Complete all the tasks or expose the impostor to win— or if you're the imposter,
+                take out the crew and stop them from returning to earth. A brand-new fun-for-all with a unique twist!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <!--Start of back to top button-->
+    <div class="backToTopBtn">
+      <button id="back-to-top-btn"><i class="fas fa-sort-up"></i></button>
+    </div>
+    <script>
+      const backToTopBtn = document.querySelector("#back-to-top-btn");
+      
+      window.addEventListener("scroll", scrollFunction);
+      
+      function scrollFunction() {
+          if (window.pageYOffset > window.screen.height * 0.5) { //show button
+              backToTopBtn.style.display = "block";
+          } else { //hide button
+              backToTopBtn.style.display = "none";
+          }
+      }
+      
+      backToTopBtn.addEventListener("click", backToTop);
+      
+      function backToTop() {
+          window.scrollTo(0, 0);
+      }
+    </script>
+    <!--Start of Footer-->
+    
+       <footer style='background-color: #222;display: grid;
+       grid-template-columns: 34fr 34fr 33fr; color: white; font-weight: normal;'> 
+           <div style="padding: 0rem 1rem 0rem 1rem;">
+               <h3>Contact Us</h3>
+               <ul>
+                   <li>Email address: <a href="mailto: customers@SB.com" style="color: white;">customers@SB.com</a></li>
+                   <li>Telephone number: <a href="tel:1234-5679" style="color: white;">+65 1234 5679</a><br>(5 lines)</li>
+                   <li>LOOK US UP IN THE FOLLOWING SOCIAL MEDIA</li>
+               </ul>
+               <div style='text-align: center; padding: 0rem 1rem 0rem 1rem;'>
+                   <i class="fa fa-twitter" style="font-size:48px;color:lightblue;margin-right: 1rem"></i>
+                   <i class="fa fa-facebook-official" style="font-size:48px;color:blue;margin-right: 1rem"></i>
+                   <i class="fa fa-instagram" style="font-size:48px;color:pink;margin-right: 1rem"></i>
+                   <i class="fa fa-youtube" style="font-size:48px;color:red"></i>
+               </div>
+         
+           </div>
+           <div style="padding: 0rem 1rem 0rem 1rem;"><h3>Location</h3>
+               <div style="font-size: 1rem;padding: 0rem 1rem 0rem 1rem;">
+                   <p>Shuttle bus from / to Saint Mario MRT Station every 30 minutes from 8am to 10pm on Tuesdays to Sundays.</p>
+                   <p>Alternatively, buses 21, 39, 12 and 59 can be taken from Saint Mario MRT Station to 200m from the park entrance.</p>
+                   <p>There are total of 5,000 parking spaces.  The hourly parking rates is $2.50 per hour.  Full-day parkings are also available.  (Please enquire at the customer counter at park lobby.)</p>
+               </div>
+               <div style="text-align: center;padding: 0rem 1rem 0rem 1rem;"class='map_tile'>
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31910.96339689995!2d103.81004596715383!3d1.2489640916969635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1eac78128345%3A0xf8f637555d901d01!2sSentosa!5e0!3m2!1sen!2ssg!4v1606700736977!5m2!1sen!2ssg" width="90%" height="300" frameborder="" style="border:2px solid red;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+               </div>
+           </div>
+           <div style="padding: 0rem 1rem 0rem 1rem;">
+               <h3>Operating Hours</h3>
+               <table style="color: white; border: none;">
+                   <tr style="border: none; width: auto;">
+                       <td style="border: none; width: auto;">Tuesday to Sunday</td>
+                       <td style="border: none; width: auto;"><time>8am</time> to <time>9pm</time></td>
+                   </tr>
+                   <tr style="border: none; width: auto;"><td style="border: none; width: auto;">Closed on Mondays</td></tr>
+               </table>
+           </div>
+       </footer>
+       <!--Start of Copyright-->
+       <div style='background-color:#222; color:white;  text-align:center; font-size: 1.2rem; font-weight: normal;padding: 1rem 0 1rem 0;'>&copy; COPYRIGHT TWESTA THEME PARK 2020</div>
+       <!--Start of Disclaimers-->
+       <div style='font-size: 1rem; font-style: italic; background-color: #222; color: white; text-align: center; font-weight: normal;padding: 1rem 1rem 1rem 1rem;' >DISCLAIMERS: We claim that we do not own all images posted on this website.  This website is strictly meant for educational purpose only, under the purview of the University of London/Goldsmith.  Images are attributed when hovered over.</div>
+<!--
+    <script>
+      //navbar2
+      window.addEventListener('scroll', myFunction);
+      
+      var sel = document.getElementById("navbar2");
+      var sticky = sel.offsetTop;
+      
+      function myFunction() {
+          if (window.pageYOffset >= 30) {
+              sel.classList.add("sticky")
+          } else {
+              sel.classList.remove("sticky");
+          }
+      }
+    </script>
+-->
+  </body>
+</html>
