@@ -57,12 +57,12 @@ let insertProperty = function (string, propName, propValue) {
 document.addEventListener("DOMContentLoaded", (event) => {
   // On first load, show home view
   showLoading("#main-content");
-  $ajaxUtils.sendGetRequest(
-    frontBody,
-    function(responseText) {
-      insertHtml('#main-content', responseText)
-    },
-    false);
+  // $ajaxUtils.sendGetRequest(
+  //   frontBody,
+  //   function(responseText) {
+  //     insertHtml('#main-content', responseText)
+  //   },
+  //   false);
 });
 
 
