@@ -1,0 +1,74 @@
+/*********************************
+The Music Interlude Newsletter
+Author: Nerissa Goh
+
+Description: Front Page
+
+Log:
+21 Jan New today
+ *********************************/
+
+.my-row-f1 {
+    border-bottom: 2px solid #ffd7009f;
+    padding: 1rem;
+}
+
+/******Feature******/
+.my-title {
+    text-align: left;
+    padding: 1rem 5rem 0 5rem;
+    line-height: 1.6;
+    font-size: 1.5rem;
+    margin: 1rem 0 1rem 0;
+}
+.my-title h1 {
+    border-bottom: 5px solid tomato;
+    font-weight: bold;
+}
+
+.my-title h2 {
+    font-weight: bold;
+}
+
+.my-title2 p{
+    text-align: left;
+    padding: 1rem 5rem 0 5rem;
+    line-height: 1.6;
+    font-size: 1.5rem;
+    margin: 0rem 0 0rem 0;
+}
+
+
+.img1-f {
+    position: relative;
+}
+
+.img-caption-f1 {
+    position: absolute;
+    color: white;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 1rem;
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    text-align: center;
+
+}
+
+@media (min-width: 992px) {
+   .my-title {
+        border-left: 2px solid #ffd7009f;
+    } 
+    #my-feat {
+        border-left: 2px solid #ffd7009f;
+        margin: 1rem 0 1rem 0;
+    } 
+    .img-caption-f1 {
+        font-size: 1.6rem;
+    }
+}
+

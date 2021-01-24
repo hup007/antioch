@@ -1,0 +1,37 @@
+.composer h2{
+    border-bottom: 5px solid coral;
+    font-weight: bold;
+}
+
+.composer img{
+    width: 40%;
+}
+
+.composer{
+    width: 2330px;
+    padding: 10px;
+    border: 5px solid gray;
+    background-color: gold;
+    margin: 0; 
+}
+
+#speaker1{
+    width: 500px;
+    padding: 10px;
+    background-color: pink;
+    margin: 0; 
+}
+
+#speaker2{
+    width: 500px;
+    padding: 10px;
+    background-color: orangered;
+    margin: 0; 
+}
+
+#speaker3{
+    width: 750px;
+    padding: 10px;
+    background-color: palegreen;
+    margin: 0; 
+}
