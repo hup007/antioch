@@ -1,0 +1,24 @@
+[
+    {
+        "title": "The Mythical Man-month",
+        "author": "Frederick P. Brooks, Jr",
+        "publisher": "Addison-Wesley",
+        "category": "Computer",
+        "cover": "image1.jpg"
+    },
+    {
+        "title": "Murder on the Orient Express",
+        "author": "Agatha Christie",
+        "publisher": "Pan Book",
+        "category": "Mystery",
+        "cover": "image2.jpg"
+    },
+    {
+        "title": "A Shropshire Lad",
+        "author": "Alfred Edward Housman",
+        "publisher": "Pan Book",
+        "category": "Poetry",
+        "cover": "image3.jpg"
+    }
+
+]
