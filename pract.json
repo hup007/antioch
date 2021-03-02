@@ -42,6 +42,13 @@
                     "publisher": "Basic Books",
                     "category": "Computer",
                     "cover": "5.jpg"
+                },
+                {
+                    "title": "7 Haibits of Highly Effective People",
+                    "author": "Stephen Covey",
+                    "publisher": "Simon & Schuster",
+                    "category": "Self Help",
+                    "cover": "6.jpg"
                 }
 
     ]
