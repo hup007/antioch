@@ -6,21 +6,21 @@
                     "author": "Frederick P. Brooks, Jr",
                     "publisher": "Addison-Wesley",
                     "category": "Computer",
-                    "cover": "image0.jpg"
+                    "cover": "0"
                 },
                 {
                     "title": "Murder on the Orient Express",
                     "author": "Agatha Christie",
                     "publisher": "Pan Book",
                     "category": "Mystery",
-                    "cover": "image1.jpg"
+                    "cover": "1"
                 },
                 {
                     "title": "A Shropshire Lad",
                     "author": "Alfred Edward Housman",
                     "publisher": "Pan Book",
                     "category": "Poetry",
-                    "cover": "image2.jpg"
+                    "cover": "2"
                 }
 
     ]
