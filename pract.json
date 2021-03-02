@@ -2,7 +2,7 @@
 {
     "books": [
                 {
-                    "title": "bThe Mythical Man-month",
+                    "title": "The Mythical Man-month",
                     "author": "Frederick P. Brooks, Jr",
                     "publisher": "Addison-Wesley",
                     "category": "Computer",
