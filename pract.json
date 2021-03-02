@@ -28,6 +28,13 @@
                     "publisher": "O'Reilly",
                     "category": "Computer",
                     "cover": "3.jpg"
+                },
+                {
+                    "title": "Introduction to Machine Learning with Python",
+                    "author": "Andreas C. Müller, Sarah Guido",
+                    "publisher": "O'Reilly",
+                    "category": "Computer",
+                    "cover": "4.jpg"
                 }
 
     ]
