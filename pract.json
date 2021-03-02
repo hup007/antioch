@@ -56,6 +56,13 @@
                     "publisher": "Cengage Learning",
                     "category": "Self Help",
                     "cover": "7.jpg"
+                },
+                {
+                    "title": "Crime and Punishment",
+                    "author": "Fyodor Dostoevsky",
+                    "publisher": "Penguin Random House",
+                    "category": "Fiction",
+                    "cover": "8.jpg"
                 }
 
     ]
