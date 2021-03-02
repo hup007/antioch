@@ -21,6 +21,13 @@
                     "publisher": "Pan Book",
                     "category": "Poetry",
                     "cover": "2.jpg"
+                },
+                {
+                    "title": "Hands-on Machine Learning with Scikit-Learn, Keras, and TensorFlow",
+                    "author": "Aurélien Géron",
+                    "publisher": "O'Reilly",
+                    "category": "Computer",
+                    "cover": "3.jpg"
                 }
 
     ]
