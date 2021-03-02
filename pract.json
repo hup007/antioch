@@ -49,6 +49,13 @@
                     "publisher": "Simon & Schuster",
                     "category": "Self Help",
                     "cover": "6.jpg"
+                },
+                {
+                    "title": "Invitation to Computer Science",
+                    "author": "G.Michael Schneider",
+                    "publisher": "Cengage Learning",
+                    "category": "Self Help",
+                    "cover": "6.jpg"
                 }
 
     ]
