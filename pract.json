@@ -35,6 +35,13 @@
                     "publisher": "O'Reilly",
                     "category": "Computer",
                     "cover": "4.jpg"
+                },
+                {
+                    "title": "The Master Algorithm",
+                    "author": "Pedro Domingos",
+                    "publisher": "Basic Books",
+                    "category": "Computer",
+                    "cover": "5.jpg"
                 }
 
     ]
