@@ -1,0 +1,36 @@
+[
+    {
+        "firstName": "Stephen",
+        "lastName": "Colbert",
+        "gender": "male",
+        "image": "./images/image0.jpg"
+    },
+
+    {
+        "firstName": "Jimmy",
+        "lastName": "Fallon",
+        "gender": "male",
+        "image": "./images/image1.jpg"
+    },
+
+    {
+        "firstName": "Jimmy",
+        "lastName": "Kimmel",
+        "gender": "male",
+        "image": "./images/image2.jpg"
+    },
+
+    {
+        "firstName": "Jennifer",
+        "lastName": "Lawrence",
+        "gender": "male",
+        "image": "./images/image3.jpg"
+    },
+
+    {
+        "firstName": "Jennifer",
+        "lastName": "Lawrence",
+        "gender": "female",
+        "image": "./images/image4.jpg"
+    },
+]
